@@ -37,24 +37,24 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/oxmysql.zip
-    
+
   - action: download_file
     path: ./tmp/files/ox_lib.zip
     url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/ox_lib.zip
-    
+
   - action: download_github
     dest: ./resources/[standalone]/connectqueue
     ref: main
     src: https://github.com/QRCore-RedM-Re/connectqueue
- 
+
   - action: download_github
     dest: ./resources/[standalone]/progressbar
     ref: main
     src: https://github.com/Rexshack-RedM/progressbar
-    
+
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
     ref: main
@@ -64,47 +64,47 @@ tasks:
     dest: ./resources/[standalone]/pma-voice
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
-    
+
   - action: download_github
     dest: ./resources/[standalone]/weathersync
     ref: main
     src: https://github.com/RexShack/weathersync
-    
+
   - action: download_github
     dest: ./resources/[standalone]/xsound
     ref: master
     src: https://github.com/RexShack/xsound
-    
+
   - action: download_github
     dest: ./resources/[standalone]/interact-sound 
     ref: main
     src: https://github.com/Rexshack-RedM/interact-sound 
-    
+
   - action: download_github
     dest: ./resources/[standalone]/menu_base
     ref: main
     src: https://github.com/Rexshack-RedM/menu_base
-    
+
   - action: download_github
     dest: ./resources/[standalone]/db-femped
     ref: main
     src: https://github.com/RexShack/db-femped
-    
+
   - action: download_github
     dest: ./resources/[standalone]/ip-chat
     ref: main
     src: https://github.com/Rexshack-RedM/ip-chat
-    
+
   - action: download_github
     dest: ./resources/[standalone]/rNotify
     ref: main
     src: https://github.com/RexShack/rNotify
-        
+
   - action: waste_time # prevent github throttling
     seconds: 10
 
   # Download RSGCore resources
-  
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-core
     ref: main
@@ -114,7 +114,7 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-inventory
     ref: main
     dest: ./resources/[framework]/rsg-inventory
-    
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-multicharacter
     ref: main
@@ -124,12 +124,12 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
     dest: ./resources/[framework]/rsg-appearance
-  
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-pvp
     ref: main
     dest: ./resources/[framework]/rsg-pvp
-    
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-clothes
     ref: main
@@ -139,9 +139,6 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-medic
     ref: main
     dest: ./resources/[framework]/rsg-medic
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-banking
@@ -162,45 +159,42 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-weapons
     ref: main
     dest: ./resources/[framework]/rsg-weapons
-            
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-radialmenu
     ref: main
     dest: ./resources/[framework]/rsg-radialmenu
-  
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-essentials
     ref: main
     dest: ./resources/[framework]/rsg-essentials
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
- 
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-horses
     ref: main
     dest: ./resources/[framework]/rsg-horses
-    
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-hud
     ref: main
     dest: ./resources/[framework]/rsg-hud
-    
+
   - action: download_github
     dest: ./resources/[framework]/rsg-menubase
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-menubase
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-    
   - action: download_github
     dest: ./resources/[framework]/rsg-adminmenu
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-adminmenu
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   # Download Rexshack MapMod resources
-    
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/redm-ipls
     ref: main
