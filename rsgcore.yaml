@@ -190,6 +190,16 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-adminmenu
 
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-telegram
+    ref: main
+    dest: ./resources/[framework]/rsg-telegram
+
+  - action: download_github
+    dest: ./resources/[framework]/rsg-bossmenu
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-bossmenu
+
   - action: waste_time # prevent github throttling
     seconds: 10
 
