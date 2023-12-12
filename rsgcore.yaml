@@ -106,19 +106,9 @@ tasks:
   # Download RSGCore resources
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-core
+    dest: ./resources/[framework]/rsg-adminmenu
     ref: main
-    dest: ./resources/[framework]/rsg-core
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-inventory
-    ref: main
-    dest: ./resources/[framework]/rsg-inventory
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-multicharacter
-    ref: main
-    dest: ./resources/[framework]/rsg-multicharacter
+    src: https://github.com/Rexshack-RedM/rsg-adminmenu
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-appearance
@@ -126,9 +116,19 @@ tasks:
     dest: ./resources/[framework]/rsg-appearance
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-pvp
+    src: https://github.com/Rexshack-RedM/rsg-banking
     ref: main
-    dest: ./resources/[framework]/rsg-pvp
+    dest: ./resources/[framework]/rsg-banking
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-bathing
+    ref: main
+    dest: ./resources/[framework]/rsg-bathing
+
+  - action: download_github
+    dest: ./resources/[framework]/rsg-bossmenu
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-bossmenu
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-clothes
@@ -136,14 +136,34 @@ tasks:
     dest: ./resources/[framework]/rsg-clothes
 
   - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-core
+    ref: main
+    dest: ./resources/[framework]/rsg-core
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-essentials
+    ref: main
+    dest: ./resources/[framework]/rsg-essentials
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-horses
+    ref: main
+    dest: ./resources/[framework]/rsg-horses
+    
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-hud
+    ref: main
+    dest: ./resources/[framework]/rsg-hud
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-inventory
+    ref: main
+    dest: ./resources/[framework]/rsg-inventory
+    
+  - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-medic
     ref: main
     dest: ./resources/[framework]/rsg-medic
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-banking
-    ref: main
-    dest: ./resources/[framework]/rsg-banking
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-menu
@@ -151,14 +171,19 @@ tasks:
     dest: ./resources/[framework]/rsg-menu
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-spawn
+    dest: ./resources/[framework]/rsg-menubase
     ref: main
-    dest: ./resources/[framework]/rsg-spawn
+    src: https://github.com/Rexshack-RedM/rsg-menubase
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-weapons
+    src: https://github.com/Rexshack-RedM/rsg-multicharacter
     ref: main
-    dest: ./resources/[framework]/rsg-weapons
+    dest: ./resources/[framework]/rsg-multicharacter
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-pvp
+    ref: main
+    dest: ./resources/[framework]/rsg-pvp
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-radialmenu
@@ -166,29 +191,9 @@ tasks:
     dest: ./resources/[framework]/rsg-radialmenu
 
   - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-essentials
+    src: https://github.com/Rexshack-RedM/rsg-spawn
     ref: main
-    dest: ./resources/[framework]/rsg-essentials
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-horses
-    ref: main
-    dest: ./resources/[framework]/rsg-horses
-
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-hud
-    ref: main
-    dest: ./resources/[framework]/rsg-hud
-
-  - action: download_github
-    dest: ./resources/[framework]/rsg-menubase
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-menubase
-
-  - action: download_github
-    dest: ./resources/[framework]/rsg-adminmenu
-    ref: main
-    src: https://github.com/Rexshack-RedM/rsg-adminmenu
+    dest: ./resources/[framework]/rsg-spawn
 
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-telegram
@@ -196,9 +201,14 @@ tasks:
     dest: ./resources/[framework]/rsg-telegram
 
   - action: download_github
-    dest: ./resources/[framework]/rsg-bossmenu
+    src: https://github.com/Rexshack-RedM/rsg-wardrobe
     ref: main
-    src: https://github.com/Rexshack-RedM/rsg-bossmenu
+    dest: ./resources/[framework]/rsg-wardrobe
+
+  - action: download_github
+    src: https://github.com/Rexshack-RedM/rsg-weapons
+    ref: main
+    dest: ./resources/[framework]/rsg-weapons
 
   - action: waste_time # prevent github throttling
     seconds: 10
